@@ -4,6 +4,7 @@ const data = Number(inputEl.dataset.length);
 function ghangeBorderColor() {
   if (inputEl.value.length !== data) {
     inputEl.classList.add('invalid');
+    inputEl.classList.remove('valid');
   }
   if (inputEl.value.length === data) {
     inputEl.classList.remove('invalid');
